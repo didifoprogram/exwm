@@ -149,7 +149,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (cider counsel swiper golden-ratio clojure-mode-extra-font-locking clojure-mode diminish org-bullets rainbow-delimiters smartparens which-key use-package paredit exwm))))
+    (spaceline cider counsel swiper golden-ratio clojure-mode-extra-font-locking clojure-mode diminish org-bullets rainbow-delimiters smartparens which-key use-package paredit exwm))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
