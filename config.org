@@ -99,15 +99,13 @@
 #+BEGIN_SRC emacs-lisp
 (use-package smartparens
 :ensure t)
-(require 'smartparens-config)
-(smartparens-mode)
-; or (smartparens-strict-mode)
+(add-hook 'clojure-mode-hook #'smartparens-strict-mode)
 #+END_SRC
 ** Rainbow-delimiters
 #+BEGIN_SRC emacs-lisp
 (use-package rainbow-delimiters
 :ensure t)
-(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+(add-hook 'clojure-mode-hook #'rainbow-delimiters-mode)
 #+END_SRC
 
 ** Org Bulets
