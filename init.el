@@ -1,3 +1,9 @@
+(require 'package)
+(setq package-enable-at-startup nil)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
+(add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/"))
+
 ;; Disable menu-bar, tool-bar and scroll-bar to increase the usable space.
 (menu-bar-mode -1)
 (tool-bar-mode -1)
@@ -26,6 +32,7 @@
 ;(add-to-list 'load-path "/path/to/xelb/")
 ;(add-to-list 'load-path "/path/to/exwm/")
 (package-initialize)
+
 ;; Load EXWM.
 (require 'exwm)
 
@@ -35,6 +42,20 @@
 
 ;; Set the initial number of workspaces (they can also be created later).
 (setq exwm-workspace-number 4)
+
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+
+
+(eval-when-compile
+  (require 'use-package))
+
+
+(require 'org)
+(org-babel-load-file
+ (expand-file-name "~/.emacs.d/config.org"
+                   user-emacs-directory))
 
 ;; All buffers created in EXWM mode are named "*EXWM*". You may want to
 ;; change it in `exwm-update-class-hook' and `exwm-update-title-hook', which
@@ -121,3 +142,17 @@
 ;; Do not forget to enable EXWM. It will start by itself when things are
 ;; ready.  You can put it _anywhere_ in your configuration.
 (exwm-enable)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (cider counsel swiper golden-ratio clojure-mode-extra-font-locking clojure-mode diminish org-bullets rainbow-delimiters smartparens which-key use-package paredit exwm))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
