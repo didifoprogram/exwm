@@ -147,9 +147,12 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   (quote
+    ("8aca557e9a17174d8f847fb02870cb2bb67f3b6e808e46c0e54a44e3e18e1020" default)))
  '(package-selected-packages
    (quote
-    (spaceline cider counsel swiper golden-ratio clojure-mode-extra-font-locking clojure-mode diminish org-bullets rainbow-delimiters smartparens which-key use-package paredit exwm))))
+    (counsel-projectile counsel-projectile-mode ivy-hydra projectile doom-themes spaceline cider counsel swiper golden-ratio clojure-mode-extra-font-locking clojure-mode diminish org-bullets rainbow-delimiters smartparens which-key use-package paredit exwm))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
