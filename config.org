@@ -26,6 +26,19 @@
 #+END_SRC
 
 
+* Theme
+#+BEGIN_SRC emacs-lisp
+(use-package color-theme-sanityinc-tomorrow
+:ensure t)
+(load-theme 'sanityinc-tomorrow-eighties t)
+#+END_SRC
+
+* Font
+#+BEGIN_SRC emacs-lisp
+(set-default-font "Hack 12" nil t)
+#+END_SRC
+
+
 * Clojure Settings
 #+BEGIN_SRC emacs-lisp
 (add-hook 'clojure-mode-hook 'subword-mode)
@@ -214,11 +227,12 @@ ivy-count-format "%d/%d "))
 ** Spaceline
 #+BEGIN_SRC emacs-lisp
 (use-package spaceline
-  :ensure t
+  :demand t
+  :init
+  (setq powerline-default-separator 'arrow-fade)
   :config
   (require 'spaceline-config)
-  (setq powerline-default-separator (quote slant))
-  (spaceline-emacs-theme))
+  (spaceline-spacemacs-theme))
 #+END_SRC
 ** Projectile
 #+BEGIN_SRC emacs-lisp

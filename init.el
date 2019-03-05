@@ -147,12 +147,13 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-enabled-themes (quote (sanityinc-tomorrow-eighties)))
  '(custom-safe-themes
    (quote
-    ("8aca557e9a17174d8f847fb02870cb2bb67f3b6e808e46c0e54a44e3e18e1020" default)))
+    ("a22f40b63f9bc0a69ebc8ba4fbc6b452a4e3f84b80590ba0a92b4ff599e53ad0" "d057f0430ba54f813a5d60c1d18f28cf97d271fd35a36be478e20924ea9451bd" "68bf77811b94a9d877f9c974c19bafe5b67b53ed82baf96db79518564177c0fb" "10a31b6c251640d04b2fa74bd2c05aaaee915cbca6501bcc82820cdc177f5a93" "152c9642180cb0907bfe7c343ed07d0586c0d84fd8e7279d90566088989a13bb" "59e82a683db7129c0142b4b5a35dbbeaf8e01a4b81588f8c163bd255b76f4d21" "2b9dc43b786e36f68a9fd4b36dd050509a0e32fe3b0a803310661edb7402b8b6" "585942bb24cab2d4b2f74977ac3ba6ddbd888e3776b9d2f993c5704aa8bb4739" "8f97d5ec8a774485296e366fdde6ff5589cf9e319a584b845b6f7fa788c9fa9a" "1436d643b98844555d56c59c74004eb158dc85fc55d2e7205f8d9b8c860e177f" "d3e333eaa461c82a124f7e7a7a9637d56fc3019478becb1847952804ca67743e" "bb08c73af94ee74453c90422485b29e5643b73b05e8de029a6909af6a3fb3f58" "628278136f88aa1a151bb2d6c8a86bf2b7631fbea5f0f76cba2a0079cd910f7d" "06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" "82d2cac368ccdec2fcc7573f24c3f79654b78bf133096f9b40c20d97ec1d8016" "8aca557e9a17174d8f847fb02870cb2bb67f3b6e808e46c0e54a44e3e18e1020" default)))
  '(package-selected-packages
    (quote
-    (counsel-projectile counsel-projectile-mode ivy-hydra projectile doom-themes spaceline cider counsel swiper golden-ratio clojure-mode-extra-font-locking clojure-mode diminish org-bullets rainbow-delimiters smartparens which-key use-package paredit exwm))))
+    (color-theme-sanityinc-tomorrow zenburn-theme panda-theme gruvbox-theme darktooth-theme counsel-projectile counsel-projectile-mode ivy-hydra projectile doom-themes spaceline cider counsel swiper golden-ratio clojure-mode-extra-font-locking clojure-mode diminish org-bullets rainbow-delimiters smartparens which-key use-package paredit exwm))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
