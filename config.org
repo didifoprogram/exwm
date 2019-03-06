@@ -33,6 +33,7 @@
 (load-theme 'sanityinc-tomorrow-eighties t)
 #+END_SRC
 
+
 * Font
 #+BEGIN_SRC emacs-lisp
 (set-default-font "Hack 12" nil t)
